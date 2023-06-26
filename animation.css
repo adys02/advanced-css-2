@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background:  #050210;
+    position: relative;
+}
+
+@keyframes turning {
+    from {
+     transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+     transform: translate(-50%, -50%) rotate(360deg);
+    }
+ }
+
+
+.glow-circle {
+    height: 450px;
+    width: 450px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad 0%, #55fb9f 50%, #b97aff 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: turning 1s linear infinite;
+    filter: blur(40px);
+}
+
+.rotation-circle {
+
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad 0%, #55fb9f 50%, #b97aff 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: turning 1s linear infinite;
+}
+
+
+.empty-circle {
+    height: 340px;
+    width: 340px;
+    border-radius: 100%;
+    background: #050210;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes growth {
+    from {
+        height: 0px;
+        width: 0px;
+        transform: translate(-50%, -50%);
+
+    }
+    to {
+        height: 340px;
+        width: 340px;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+
+.growth-circle {
+    border-radius: 100%;
+    background: #080625;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: growth 1s linear infinite;
+
+}
+
+
+
